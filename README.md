@@ -1,28 +1,13 @@
-## Thanks for the support on the first one
 
-
-## Discord System
-Gives you the verified system tag
+## Discord Sistem
+Kendinize Doğrulanmış Sistem Tagını Verin!
 
 ```js
 var findModule = (item) => Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}}, [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default[item]!==void 0).exports.default;
 findModule('getCurrentUser').getCurrentUser().system = true;
 ```
-Credit: [Fweak](https://gitdab.com/fweak1337)
-
-## Change system tag
-Changes the system tag
-
-```js
-var findModule = (item) => Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}}, [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default[item]!==void 0).exports.default;
-
-findModule('Messages').Messages.SYSTEM_DM_TAG_SYSTEM = 'System Tag Name Here';
-```
-Credit: [Fweak](https://gitdab.com/fweak1337)
-
-
-## Get all Badges
-Gives you most of the discord badges
+## Tüm Discord Rozetleri
+Kendinize Tüm rozetleri verin!
 
 ```js
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
@@ -30,30 +15,22 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 0).exports.default.getCurrentUser().flags=-33
 ```
 
-Credit: [Zebratic](https://github.com/Zebratic)
-
-## Get Bot Tag
-Gives you bot tag
+## Bot Tagı
+Kendinize Bot Tagını verin!
 
 ```js
 var findModule = (item) => Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}}, [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default[item]!==void 0).exports.default;
 findModule('getCurrentUser').getCurrentUser().bot = true;
 ```
-
-Credit: [con](https://www.google.com/)
-
-## Get Token
-Gives you the token of your account
+## Token Alma
+Kendi tokeninizi alın!
 
 ```js
 Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getToken!==void 0).exports.default.getToken()
 ```
 
-Credit: [idk](https://pastebin.com/EG4YNbJD)
-
-
-## Loginto token
-Logs into a token 
+## Token İle Giriş Yapma
+Tokeniniz ile discorda giriş yapın!
 
 ```js
 function login(token) {
@@ -68,64 +45,30 @@ login("TOKEN_HERE")
 ```
 
 
-## Secret everyone ping
-pings everyone lol
+## Gizli Mesaj
+Gizli mesajlar gönderin!
 
 ```
-enter text here||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|||||||||||| https://@everyone
+enter text here||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|||||||||||| discord.gg/rabel
 ```
 
 
-## Fake screenshots
-spoof messages to 
+## Tüm Mejları Düzenleme
+Discoddaki tüm yazıları değiştirin!
 
 ```js
 document.designMode = 'on'
 ```
 
-
-
-## Colored text
-Colored text!
-
-```js
-var FindModuleByDisplayName = (item) => Object.values(window.webpackJsonp.push([[], { __extra_id__: (module, exports, req) => module.exports = req }, [["__extra_id__"]]]).c).find(mod => mod && mod.exports && mod.exports.default && mod.exports.default.displayName && mod.exports.default.displayName === item).exports;
-
-var Group = FindModuleByDisplayName('Message');
-var Original = Group.default;
-
-Group.default = (e) => {
-    const messageContent = e.childrenMessageContent;
-
-    if (!messageContent.type || !messageContent.type.type || messageContent.type.type.displayName != "MessageContent" || messageContent.type.type.__patched) return Original(e);
-
-    const originalType = messageContent.type.type;
-
-    messageContent.type.type = function (props) {
-        const returnValue = originalType(props);
-        returnValue.props.style = { color: props.message.colorString || "" };
-        return returnValue;
-    };
-
-    messageContent.type.type.__patched = true;
-    Object.assign(messageContent.type.type, originalType);
-
-    return Original(e);
-}
-```
-
-## Experiments
-enables experiments
+## Gizli Menüler (Experiments)
+Discorddaki özel menüleri açın!
 
 ```js
 webpackJsonp.push([[999],{"l":(m,e,r)=>{for(k in r.c)(m=r.c[k].exports)&&m.default&&m.default.isDeveloper==0&&Object.defineProperty(m.default,"isDeveloper",{get:()=>1})}},[["l"]]])```
 ```
 
-Credit: con
-
-
-## TEXT SHADOW
-adds text shadow
+## Gölgeli Mesaj
+Mesajlarınıza Gölgelik Katın!
 
 ```js
 const injectCss = (id, css) => {
@@ -144,8 +87,8 @@ injectCss('ReziztTextShadow', `
 `);
 ```
 
-## Slide in messages
-#Makes messages slide
+## Kayan Mesaj
+#Mesajlarınıza hareketlilik katın!
 
 ```js
 const injectCss = (id, css) => {
@@ -173,9 +116,8 @@ injectCss('Reziztslide', `
 ```
 
 
-## Add your OWN css!
-Thanks fweak for finding this
-
+## Kendi CSS'iniz yapın
+```
 const injectCss = (id, css) => {
     const style = document.createElement('style');
     style.id = id;
@@ -186,5 +128,5 @@ const injectCss = (id, css) => {
 injectCss('Whatever', `
 **YOUR CSS HERE**
 `);
-
+```
 
